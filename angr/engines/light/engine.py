@@ -557,7 +557,6 @@ class SimEngineLightAIL(SimEngineLight):
         except TypeError:
             return ailment.Expr.BinaryOp(expr.idx, 'Xor', [expr_0, expr_1], **expr.tags)
 
-
     def _ail_handle_Shr(self, expr):
 
         arg0, arg1 = expr.operands
